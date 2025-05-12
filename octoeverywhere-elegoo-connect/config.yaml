@@ -10,3 +10,6 @@ options:
 schema:
   printer_ip: str
 image: "octoeverywhere/octoeverywhere:latest"
+arch:
+  - amd64
+  - aarch64
