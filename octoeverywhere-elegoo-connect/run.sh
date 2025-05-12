@@ -1,8 +1,4 @@
-#!/bin/bash
-
-# Set the printer IP dynamically from Home Assistant options
+#!/usr/bin/with-contenv bashio
 export COMPANION_MODE=elegoo
-export PRINTER_IP="${PRINTER_IP}"
-
-# Run the original container's default command
-/octoeverywhere
+export PRINTER_IP=$(bashio::config 'printer_ip')
+exec /app/docker-entrypoint.sh
