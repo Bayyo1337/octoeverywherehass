@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
-# Load printer IP from HA add-on options
-PRINTER_IP=$(jq -r '.printer_ip' /data/options.json)
+#!/bin/bash
 
-echo "Starting OctoEverywhere in Elegoo Companion mode for IP: $PRINTER_IP"
+# Set the printer IP dynamically from Home Assistant options
+export COMPANION_MODE=elegoo
+export PRINTER_IP="${PRINTER_IP}"
 
-COMPANION_MODE=elegoo \
-PRINTER_IP="$PRINTER_IP" \
-/app/OctoEverywhere
+# Run the original container's default command
+/octoeverywhere
