@@ -1,0 +1,8 @@
+{
+  "name": "Custom Add-ons",
+  "url": "https://github.com/Bayyo1337/octoeverywherehass",
+  "maintainer": "Noah Richter <you@example.com>",
+  "addons": [
+    "https://github.com/Bayyo/octoeverywherehass"
+  ]
+}
