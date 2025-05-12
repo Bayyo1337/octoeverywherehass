@@ -1,0 +1,19 @@
+{
+  "name": "OctoEverywhere Elegoo Connect",
+  "version": "1.0.0",
+  "slug": "octoeverywhere_elegoo_connect",
+  "description": "OctoEverywhere Companion in Elegoo Mode",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "hassio_api": false,
+  "hassio_role": "default",
+  "privileged": [],
+  "map": ["config:rw"],
+  "options": {
+    "printer_ip": "192.168.178.33"
+  },
+  "schema": {
+    "printer_ip": "str"
+  }
+}
