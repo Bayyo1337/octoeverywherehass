@@ -1,4 +1,8 @@
-#!/usr/bin/with-contenv bashio
+#!/bin/bash
+
+# Set environment variables directly
 export COMPANION_MODE=elegoo
-export PRINTER_IP=$(bashio::config 'printer_ip')
+export PRINTER_IP="${PRINTER_IP}"
+
+# Call the original entrypoint script
 exec /app/docker-entrypoint.sh
