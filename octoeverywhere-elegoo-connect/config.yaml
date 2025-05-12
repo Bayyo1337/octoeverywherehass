@@ -19,5 +19,3 @@ schema:
 init: false
 map:
   - config:rw
-
-image: null
