@@ -5,10 +5,19 @@ description: OctoEverywhere Companion in Elegoo Mode
 startup: services
 boot: auto
 host_network: true
-options:
-  printer_ip: "192.168.178.33"
-schema:
-  printer_ip: str
+
 arch:
   - amd64
   - aarch64
+
+options:
+  printer_ip: "192.168.178.33"
+
+schema:
+  printer_ip: str
+
+init: false
+map:
+  - config:rw
+
+image: null
